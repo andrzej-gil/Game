@@ -17,7 +17,9 @@ void testName() throws Exception {
 	String standortHauptbeschreibung = "Du stehst vor der Höllgrotte in Baar";
 
 	//when
-	String gameOut = "Eingang Höllgrotte in Baar, Du stehst vor der Höllgrotte in Baar";
+	String gameOut = 
+			new Game().start();
+	
 	
 	//then
 	assertThat(gameOut, allOf(containsString(standortTitel), containsString(standortHauptbeschreibung)));
